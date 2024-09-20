@@ -1,11 +1,9 @@
-# Function to swap two numbers using XOR
+# Function to swap two numbers using tuple unpacking
 def swap_numbers(a, b):
     print("Before swapping: a =", a, "b =", b)
     
-    # Swapping using XOR
-    a = a ^ b
-    b = a ^ b
-    a = a ^ b
+    # Swapping using tuple unpacking
+    a, b = b, a
     
     print("After swapping: a =", a, "b =", b)
 
